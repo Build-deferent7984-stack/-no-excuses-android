@@ -209,7 +209,7 @@ fun TaskRow(name: String, time: String, checked: Boolean, onClick: () -> Unit) {
 }
 
 @Composable
-fun MiniCard(symbol: String, label: String) {
+fun RowScope.MiniCard(symbol: String, label: String) {
     Card(Modifier.weight(1f), colors = CardDefaults.cardColors(containerColor = Panel),
         shape = RoundedCornerShape(14.dp)) {
         Column(Modifier.padding(12.dp)) {
